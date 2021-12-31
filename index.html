@@ -48,8 +48,8 @@
                 fetch('https:api.openweathermap.org/data/2.5/weather?q='+inputValue.value+'&appid=253e991a56f40a5bb72376d973aaabb1')
                 .then(res => res.json())
                 .then(data =>{ 
-                    const name = data['name']
-                    let temp = data['main']['temp']
+                    const name = data['name'];
+                    let temp = data['main']['temp'];
                     let tempToCelsius = (temp - 273.15).toFixed(1);
                     const mainWeather = data['weather'][0]['main'];
 
